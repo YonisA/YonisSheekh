@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    height: 100hv;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+header{
+padding: 1em;
+ background: #c63f17;
+}
+
+.navItems a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.navItems ul{
+    display: flex;
+    justify-content: center;
+}
+.navItems ul li a{
+    display: block;
+    padding: 1em;
+}
+
+.landingSection{
+    background-color: #ff8a65;
+    text-align:center;
+    color: white;
+}
+.landingSection img{
+    margin: 20px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 20%;
+}
+.landingSection h1{
+    margin: 5px;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.landingSection ul{
+    display: flex;
+    justify-content: center;
+}
+.landingSection ul li {
+    padding: .5em;
+}
+.aboutMeContainer{
+    text-align: center;
+    background-color:white;
+}
+.aboutMeTitle{
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline #c63f17;
+}
+.aboutMeContainer img{
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 20%;
+    margin-top: 10px;
+}
+.aboutMeBody{
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+    color: #7b7b7b ;
+}
+
+.mySkills{
+text-align: center;
+background-color: #ff8a65;
+color: white;
+padding-bottom:1px;
+margin-bottom: 10px;
+}
+.mySkills p{
+    padding: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+  
+}
+.coreSkillsTitle{
+    background-color:white;
+    margin-top: 10px;
+    color: black;
+    text-decoration: underline #c63f17;
+}
+.softSkillsTitle{
+    background-color:white;
+    margin-top: 10px;
+    color: black;
+    text-decoration: underline #c63f17;
+}
+.mySkills img{
+    max-height: 100px;
+    max-width: 200px;
+}
+
+ .coreFirstSkill p, .coreSecondSkill p, .coreThirdSkill p {
+     font-size: 18px;
+     margin-top: 10px;
+     color: black;
+     text-transform: none;
+     letter-spacing: .2em;
+     font-weight: bold;
+ }
+ .coreFirstSkill , .coreSecondSkill , .coreThirdSkill  {
+    background-color: white;
+    margin: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.softFirstSkill , .softSecondSkill , .softThirdSkill  {
+    margin: 20px;
+    background-color: white;
+    border-radius: 10%;
+}
+.softThirdSkill{
+    margin-bottom: 25px;
+}
+ .softFirstSkill p, .softSecondSkill p, .softThirdSkill p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+    text-transform: none;
+    letter-spacing: .2em;
+    font-weight: bold;
+}
+ .softFirstSkill img, .softSecondSkill img, .softThirdSkill img{
+
+   margin-top: 3em;
+}
+
+.someProjectsTitle  {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: underline #c63f17;
+}
+.ProjectWraper {
+    padding: 1.5em;
+    margin: 2em;
+    text-align: center;
+
+}
+.ProjectBody {
+    font-size: 25px;
+    text-align:center;
+    color: #7b7b7b ;
+}
+.imageContainer img{
+    max-height: 400px;
+    max-width: 300px;
+    margin: 1em
+}
+
+.contactMe a{
+    color: white;
+}
+.contactMe{
+    color: white;
+    text-align: center;
+    background-color:  #c63f17;
+    padding-bottom: 5px;
+}
+.contactTitle{
+    font-size: 24px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  
+}
+.contactMe img{
+    max-height: 16px;
+}
+.email, .twitter, .phonNumber, .linkedIn{
+   margin: 10px; 
+    
+}
+@media only screen and (min-width: 800px){
+    @keyframes slideIn {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0; 
+        } 
+        100% { 
+            opacity: 1; 
+         } 
+        }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1.5;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-name: slideIn;
+    }
+    .navItems ul li a{
+        padding: 1.5em;
+    }
+    .navItemsContainer{
+       margin-bottom: 5em;
+    }
+    .navItems a:first{
+        margin-left: 0;
+    }
+    .navItems a{
+        margin-left: 10px;
+    }
+    .navItems a:hover{
+        transition: 0.2s;
+        color:black
+    }
+    
+    .navItems ul{
+        display: flex;
+        justify-content: left;
+    }
+    .landingSection{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landingSection img{
+        max-height: 500px;
+        max-width: 500px;
+        border-radius: 10%;
+        margin-bottom: 3em;
+        animation: fadeInAnimation ease .2s; 
+        animation-iteration-count: 1; 
+    }
+    .landingSection h1{
+        margin: 25px;
+        margin-top: 0;
+        font-size: 28px;
+        text-align: center;
+    }
+    .landingSection ul li {
+        padding: 1em;
+        font-size: 18px;
+    }
+
+    .aboutMeContainer{
+   display:  inline-grid;
+   grid-template-columns: 40% auto;
+   place-content: center;
+    background-color:white;
+}
+
+.aboutMeTitle{
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    text-decoration: underline #c63f17;
+}
+.aboutMeContainer img{
+    max-height: 370px;
+    max-width: 370px;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+.aboutMeBody{
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    font-size: 20px;
+    color: #7b7b7b ;
+}
+.coreSkills, .softSkills{
+    display: flex;
+    justify-content: center;
+   
+}
+.softFirstSkill p,.softSecondSkill {
+    padding: 5px 4em;
+   
+}
+.softFirstSkill p:nth-of-type(0){
+    padding: 10px 3em;
+}
+.ProjectBody  {
+    text-align:left;
+}
+.ProjectWraper {
+   display:grid;
+   grid-template-columns: auto 40%;
+}
+.ProjectBody {
+  display: grid;
+  place-content: center;
+}
+.imageContainer img{
+    max-height: 500px;
+    max-width: 400px;
+    margin: 1em
+}
+
+.contactMe a{
+   display: block;
+}
+
+}
